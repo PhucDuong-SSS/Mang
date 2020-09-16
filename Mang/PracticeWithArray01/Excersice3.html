@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Show the max value in array and calculation average value</title>
+</head>
+<body>
+  <script>
+    let arr = [5,10,15]
+    let sum =0;
+    let number = arr.length;
+    let average=0;
+    let max = arr[0];
+    for (let i=0; i< arr.length; i++) {
+      sum += arr[i];
+      if(arr[i] > max) {
+        max= arr[i];
+      }
+    }
+    average = sum/number;
+    document.write(`Giá trị lớn nhất trong mảng là ${max}, giá trị trung bình các phần tử trong mảng là ${average}`)
+  </script>
+</body>
+</html>

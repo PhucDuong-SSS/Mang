@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>print the reverse array
+  </title>
+</head>
+<body>
+  <script>
+    let count = 0;
+    let elementArr;
+    let arr= [];
+    while(count <10) {
+      elementArr = prompt(`Nhập mảng phần tử thứ ${count} của mảng 10 phần tử`);
+      arr.push(elementArr);
+      count++;
+    }
+    document.write(`Mảng ban đàu ${arr}<br>`);
+    let newArr = arr.reverse();
+    document.write(`Mảng kết quả ${newArr.join()}`);
+    
+  </script>
+</body>
+</html>

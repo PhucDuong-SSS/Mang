@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Concat Array</title>
+  </head>
+  <body>
+    <script>
+      let count1 = 0;
+      let count2 = 0;
+      let elementArr1;
+      let elementArr2;
+      let arr1 = [];
+      let arr2 = [];
+      while (count1 < 10) {
+        elementArr1 = parseInt(
+          prompt(`Nhập mảng phần tử thứ ${count1} của mảng 1 gồm10 phần tử`)
+        );
+        arr1.push(elementArr1);
+        count1++;
+      }
+      while (count2 < 10) {
+        elementArr2 = parseInt(
+          prompt(`Nhập mảng phần tử thứ ${count2} của mảng 2 gồm10 phần tử`)
+        );
+        arr2.push(elementArr2);
+        count2++;
+      }
+      document.write(`Mảng 1: ${arr1} <br>`);
+      document.write(`Mảng 2: ${arr2} <br>`);
+      let arr = arr1.concat(arr2);
+      document.write(`Mảng sau khi sắp xêp: ${arr}`);
+    </script>
+  </body>
+</html>

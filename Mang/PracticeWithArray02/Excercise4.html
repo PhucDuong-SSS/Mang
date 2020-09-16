@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>counting the number of words in a string</title>
+</head>
+<body>
+  <script>
+    let string = prompt("Nhập chuỗi để đếm số từ");    
+    let strimString =  string.trim();
+    let stringArr = strimString.split(" ");
+    let numberOfWord = stringArr.length;
+    document.write(`Chuỗi ban đầu ${string} <br>`)
+    document.write(`Số lượng từ trong chuỗi là ${numberOfWord}`)
+
+  </script>
+</body>
+</html>

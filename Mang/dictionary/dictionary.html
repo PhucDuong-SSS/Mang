@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dictionary</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      .header__navbar {
+        height: 42px;
+        width: 100%;
+        background-color: #0a7be9;
+      }
+      .header__logo {
+        height: 160px;
+        width: 100%;
+        background-color: white;
+       
+        display: flex;
+        justify-items: center;
+      }
+      .header__logo-img {
+        height: 30px;
+      }
+      .body__search {
+        display: flex;
+        justify-content: center;
+        
+      }
+     
+    </style>
+  </head>
+  <body>
+    <div class="app">
+      <div class="header__navbar"></div>
+      <div class="header__logo">
+        <div>
+          <img
+            src="https://stc-laban.zdn.vn/dictionary/images/logo_dict_1.2.png"
+            class="header__logo-img"
+          />
+        </div>
+      </div>
+      <div class="body__search">
+        <div class="body__search-input">
+          <input id="inputContent" type="text" class="body__search-input-content" placeholder="Nhập từ cần tìm kiếm">
+        </div>
+        <div class="body__search-input">
+          <select name="" id="">
+            <option value="">Việt-Anh</option>
+            <option value="">Anh-Việt</option>
+          </select>
+        </div>
+        <div class="body__search-input">
+          <button onclick="Search()">Tra từ</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    let englishWord = ["hello", "class", "girl",]
+    let VietNameseWord = ["Xin chào", "Lớp học", "Con gái"]
+    function Search(){
+      let inputContent = document.getElementById("inputContent").value;
+      let index = englishWord.indexOf(inputContent);
+      if (index !== -1) {
+        document.getElementById("inputContent").value = VietNameseWord[index]
+      }
+      else {
+        document.getElementById("inputContent").value = " Không tìm thấy từ"
+      }
+    }
+    
+    
+
+  </script>
+</html>

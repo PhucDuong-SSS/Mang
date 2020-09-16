@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Comparing two strings</title>
+</head>
+<body>
+  <script>
+    let string1 = prompt("Nhập vào chuỗi 1");
+    let string2 = prompt("Nhập vào chuỗi 2");
+    let string1Arr = string1.split(" ");
+    let string2Arr = string2.split(" ");
+    let isEqual = false;
+    
+    
+    if( string1.indexOf(string2,0) !== -1 && string1.length == string2.length) {
+      document.write(`Hai chuỗi giống nhau`);
+    }
+    else {
+      document.write(`Hai chuỗi khác nhau`)
+    }
+  </script>
+</body>
+</html>

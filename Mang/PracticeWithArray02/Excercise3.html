@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let number = prompt("Nhập kích thước của mảng");
+    let count = 0;
+    let elementArr;
+    let arr= [];
+    let count1=0;
+    let upperCharacter = ["q","w","e","r","t","y","u","i","o","p","a","s","d","f","g","h","j","k","l","z","x","c","v","b","n","m"]
+    let lowerCharacter = ["Q","W","E","R","T","Y","U","I","O","P","A","S","D","F","G","H","J","K","L","Z","X","C","V","B","N","M"]
+    while(count <number) {
+      elementArr = prompt(`Nhập mảng phần tử chuỗi thứ ${count} của mảng `);
+      arr.push(elementArr);
+      count++;
+      
+    }
+    document.write(`Mảng ban đầu ${arr} <br>`)
+    for (let i=0;i < arr.length; i++) {
+      if(upperCharacter.indexOf(arr[i]) !==-1|| lowerCharacter.indexOf(arr[i])!==-1) {
+        count1++;
+      }
+    }
+    document.write(`Sô phần tử ký tự trong mảng là ${count1}`)
+  </script>
+</body>
+</html>

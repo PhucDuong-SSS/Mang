@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let arr = [1, 10, 20, 50, 60, 70, -5, 6, 8, 15];
+    document.write(`Mảng trước khi cắt ${arr} <br>`)
+    let arrSplice;
+      let flag = false
+      let V = parseInt(
+        prompt("Nhập phần tử V để kiểm tra V có thuộc phần tử hay không")
+      );
+      for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === V) {
+        flag = true
+        arr.splice(i,1)
+      }}
+      if (flag) {
+        document.write(`${V} in in the array <br>`);
+        document.write(`Mảng V sau khi cắt ${arr}`);
+        
+
+      }
+      else {
+        alert("V is not in the array")
+      }
+  </script>
+</body>
+</html>

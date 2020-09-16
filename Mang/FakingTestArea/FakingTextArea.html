@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Type anthing slowly</h1>
+    <textarea
+      name=""
+      id="textarea"
+      cols="30"
+      rows="10"
+      onkeyup="inputtext(textarea)"
+    ></textarea>
+    <script>
+      function inputtext(textarea) {
+        let text = "Cầm tay chỉ việc !! ";
+        const length = textarea.value.length;
+        const arraystr = [];
+        if (length <= text.length) {
+          for (let i = 0; i < length; i++) {
+            arraystr.push(text[i]);
+          }
+        }
+        const result = arraystr.join("");
+        textarea.value = result;
+      }
+    </script>
+  </body>
+</html>

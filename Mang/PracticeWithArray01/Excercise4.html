@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creting new array by keyboard then reverse the array</title>
+  </head>
+  <body>
+    <script>
+      let numberOfArray = parseInt(
+        prompt("Nhập sô lượng phần tử mảng bạn muốn khỏi tạo")
+      );
+      let count = 0;
+      let arr = [];
+
+      while (count < numberOfArray) {
+        let valueOfArray = parseInt(prompt("Nhập giá trị phần tử"));
+        arr.push(valueOfArray);
+        count++;
+      }
+      document.write(`Chuỗi ban đầu ${arr} <br>`);
+      document.write(`Chuỗi sau khi đảo ngược ${arr.reverse()} <br>`);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finding nagetive in string</title>
+</head>
+<body>
+ <script>
+   let numberOfString = parseInt(prompt("Nhập số lượng số có trong chuỗi"))
+   let string="";
+   let count=0;
+   while (count < numberOfString) {
+     let elementOfString = prompt("Nhập các phần tử của chuỗi");
+     string =  string.concat(" ",elementOfString)
+     count++;     
+   }
+   console.log(string);
+   let stringArray = string.split(" ");
+   let countNagetiveNumber= 0;
+   for (let i =0; i<stringArray.length; i++ ) {
+     if ( stringArray[i] <0) {
+       countNagetiveNumber ++;
+     }
+   }
+   document.write(`Dãy số trong chuỗi ban đầu ${string} <br>`)
+   document.write(`Tổng có nguyên âm trong chuỗi là ${countNagetiveNumber} <br>`)
+
+ </script> 
+</body>
+</html>
