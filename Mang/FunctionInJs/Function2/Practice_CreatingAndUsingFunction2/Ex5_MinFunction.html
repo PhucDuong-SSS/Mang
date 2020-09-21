@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Min function for there numbers that enter from keyboard</title>
+</head>
+<body>
+  <script>
+      function getNumber() {
+        let number ;
+        do {
+          number=parseFloat(prompt("Nhập số"));
+        } while (!Number.isInteger(number));
+        return number;
+      }
+
+      function min(num1, num2, num3) {
+      let min = num1;
+      (min>num2)?(min=num2):(min>num3)?(min=num3):min;
+      return min;
+    }
+     function main() {
+       let num1 = getNumber();
+       let num2 = getNumber();
+       let num3 = getNumber();
+       alert(`Giá trị nhỏ nhất trong 3 số là ${min(num1, num2, num3)}`)
+     }
+     main();
+  </script>
+</body>
+</html>

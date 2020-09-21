@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let stars1 = ["Polaris"," Aldebaran","Deneb","Vega","Altair","Dubhe"," Regulus"];
+    let stars2 = ["Ursa Minor"," Tarurus","Cygnus","Lyra","Aquila","Ursa Major"," Leo"];
+    function findNameStar(string) {      
+      let index;
+      for (let i=0; i<stars1.length; i++) {
+        if(stars1[i] == string) {
+          index= i;
+        }
+      }
+      return index;
+    }
+
+    function getString() {
+      let string ;
+      let isInArr;
+      do {
+        string = prompt("Enter star name");
+        isInArr= stars1.indexOf(string);
+      } while (isInArr == -1);
+      return string;
+    }
+
+    function main() {
+      let string = getString();
+      console.log(string);
+      let index =findNameStar(string);
+      alert(`Chòm sao tương ứng của ${string} là ${stars2[index]}`);      
+    }
+    main();
+  </script>
+</body>
+</html>

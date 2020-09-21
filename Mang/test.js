@@ -1,4 +1,8 @@
-let a = [1,2,3]
-let b = new Array(1,2,3)
-console.log(typeof a)
-console.log(typeof b)
+let a= 3
+let b =4 
+let c =a ++ + ++b;
+let d = a-- -b +c
+console.log(a)
+console.log(b)
+console.log(c)
+console.log(d)

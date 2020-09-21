@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reserving the array</title>
+  </head>
+  <body>
+    <script>
+      function reserveArr() {
+        let number = parseInt(prompt("Nhập số phần tử của mảng"));
+        let index = 0;
+        let arr = [];
+        do {
+          valueArr = parseInt(prompt("Nhập phần tử"));
+          if (Number.isInteger(valueArr)) {
+            arr.push(valueArr);
+            index++;
+          }
+        } while (index < number);
+        document.write(`Mảng trước khi nhập ${arr} <br>`);
+        document.write(`Mảng sau khi đảo  ngược là : ${arr.reverse()} <br>`);
+      }
+      reserveArr()
+    </script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>isNumberCharacter</title>
+</head>
+<body>
+  <script>
+    function isNumberCharacter(numberCharacter){
+      let stringCharacter ="0123456789"
+      if(stringCharacter.indexOf(numberCharacter,0) !=-1) {
+        return true
+      }
+      else {
+        return false;
+      }
+    }
+    let stringCharacter = prompt("nhập ký tự để kiểm tra");
+     let result =isNumberCharacter(stringCharacter);
+     if(result) {
+       alert("Ký tự nhập vào là ký tự số");
+     }
+     else {
+      alert("Ký tự nhập vào KHÔNG là ký tự số")
+     }
+  </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Check array</title>
+  </head>
+  <body>
+    <script>
+      function check(){
+        let number = prompt("Nhập số phần tử của mảng");
+          let index = 0;
+          let arr = [];
+          let count =0;
+          flag =false;
+          do {
+            valueArr =prompt("Nhập phần tử");
+            arr.push(valueArr);
+            index++;
+          }
+          while (index < number);
+          let character = prompt("Nhap ky tu can so sanh");
+
+        for (let i=0; i<arr.length; i++){
+          if(arr[i] == character) {
+            count++;
+             flag =true;
+            }            
+      }
+      if(flag){
+              alert(`Ký tự ${character} xuât hiện ${count} lần trong mảng`)
+            }
+            else {
+              return -1
+            }
+
+    }
+
+
+      check()
+    </script>
+  </body>
+</html>

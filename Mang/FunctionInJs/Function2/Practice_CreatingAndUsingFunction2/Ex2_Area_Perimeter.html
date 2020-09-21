@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Area and perimetter of circle function</title>
+</head>
+<body>
+  <script>
+    function calcAreaAndPerimetterCircle(radius, option){
+      if(option =="area") {
+        return radius*2*3.14
+      }
+      if(option =="perimetter") {
+        return radius*radius*3.14
+      }      
+    }
+    document.write(`Radius is 5: Area ${calcAreaAndPerimetterCircle(5,"area")} ----Perimetter: ${calcAreaAndPerimetterCircle(5,"perimetter")}`)
+  </script>
+</body>
+</html>

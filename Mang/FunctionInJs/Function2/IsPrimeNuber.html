@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IsPrimeNuber</title>
+  </head>
+  <body>
+    <script>
+      function isPrimeNuber(number) {
+        let flag;
+        if(number == 2 ) {
+          flag = true;
+        }
+        else if (number>2) {
+          flag =true;
+          for (let i = 2; i < number - 1; i++) {
+            if( number % i == 0) {
+              flag = false;  
+              break;
+            }                        
+          }          
+        }
+        
+        return flag;
+      }
+      function getNumber()  {
+        let number ;
+        do {
+          number = parseInt(prompt("Enter number to check")); 
+        } while (!Number.isInteger(number));
+        return number;
+      }
+
+      function main() {
+        let number = getNumber();
+        let result =isPrimeNuber(number);       
+        if(result == true) {
+          document.write(`${number} is a prime number`);
+        }
+        else {
+          document.write(`${number} is not a prime number`);
+        }
+      }
+      main()
+    </script>
+  </body>
+</html>

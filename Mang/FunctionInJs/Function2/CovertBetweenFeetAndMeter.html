@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+  </head>
+  <body>
+    <form>
+      <p>
+        <label>Foot</label>
+        <input
+          id="inputFoot"
+          type="number"
+          placeholder="Foot"
+          oninput="metterConverter(this.value)"
+          onchange="metterConverter(this.value)"
+        />
+      </p>
+      <p>
+        <label>Metter</label>
+        <input
+          id="inputMetter"
+          type="number"
+          placeholder="Metter"
+          oninput="footConverter(this.value)"
+          onchange="footConverter(this.value)"
+        />
+      </p>
+      
+    </form>
+
+    <script>
+      function metterConverter(valNum) {
+        valNum = parseFloat(valNum);
+        document.getElementById("inputMetter").value =
+          valNum*3.279 ;
+      }
+      function footConverter(valNum) {
+        valNum = parseFloat(valNum);
+        document.getElementById("inputFoot").value =
+          (valNum*0.305);
+      }
+    </script>
+  </body>
+</html>
